@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj": {}
+    "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj": {
+    "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj",
+        "projectUniqueName": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj",
         "projectName": "AprenderBrincando",
-        "projectPath": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj",
-        "packagesPath": "C:\\Users\\Windows 10 Pro X-64\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\obj\\",
+        "projectPath": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\AprenderBrincando.csproj",
+        "packagesPath": "C:\\Users\\odnan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows 10 Pro X-64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\odnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Coravel.Mailer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.2, )"
@@ -78,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

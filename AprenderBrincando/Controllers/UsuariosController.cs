@@ -5,17 +5,39 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using System.Text;
 using System.Security.Cryptography;
+using Microsoft.AspNetCore.Identity;
+using Coravel.Mailer.Mail.Interfaces;
+using AprenderBrincando.Messages;
+using Microsoft.AspNetCore.Mvc.Routing;
+using Coravel.Mailer.Mail;
+
+
+
+using System;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Mime;
+using System.Threading;
+using System.ComponentModel;
+using System.Drawing;
+using static System.Net.WebRequestMethods;
+using static Coravel.Mailer.Mail.Mailers.AssertMailer;
+using Org.BouncyCastle.Asn1.Pkcs;
+
 
 namespace AprenderBrincando.Controllers
 {
     public class UsuariosController : Controller
     {
+        private readonly IMailer mailer;
         private readonly Repositories.ADO.SQLServer.Usuario repository;
+        private readonly IUrlHelperFactory _urlHelperFactory;
 
-        public UsuariosController(IConfiguration configuration) // objeto configuration => parte do framework que permite ler o arquivo appsettings.json - GetConnectionString => método do framework que permite ler a chave ConnectionStrings deste arquivo.
+        public UsuariosController(IConfiguration configuration, IUrlHelperFactory urlHelperFactory, IMailer mailer) // objeto configuration => parte do framework que permite ler o arquivo appsettings.json - GetConnectionString => método do framework que permite ler a chave ConnectionStrings deste arquivo.
         {
             this.repository = new Repositories.ADO.SQLServer.Usuario(configuration.GetConnectionString(Configurations.Appsettings.getKeyConnectionString()));
-            //Configurations.Appsettings.getKeyConnectionString => nossa classe de configuração para trazer a chave que deve ser lida, neste caso: DefaultConnection.
+            this.mailer = mailer;
+            _urlHelperFactory = urlHelperFactory;
         }
 
         public ActionResult Create()
@@ -24,6 +46,15 @@ namespace AprenderBrincando.Controllers
         }
 
         public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        public ActionResult ResetPassword()
         {
             return View();
         }
@@ -39,7 +70,7 @@ namespace AprenderBrincando.Controllers
 
                 return RedirectToAction("Login", "Usuarios");
             }
-            catch (Exception e)
+            catch
             {
                 return View();
             }
@@ -53,7 +84,7 @@ namespace AprenderBrincando.Controllers
             {
                 login.Senha = ComputeSha256Hash(login.Senha);
 
-                Models.Usuario usuario = this.repository.getByLogin(login.Email);
+                Models.Usuario usuario = this.repository.getByEmail(login.Email);
 
                 if (usuario == null)
                 {
@@ -89,7 +120,7 @@ namespace AprenderBrincando.Controllers
                     return RedirectToAction("Index", "Home");
                 }
             }
-            catch (Exception e)
+            catch
             {
                 return View();
             }
@@ -118,6 +149,79 @@ namespace AprenderBrincando.Controllers
                 return builder.ToString();
             }
         }
-    
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgotPassword(Models.Email email)
+        {
+            try
+            {
+                Models.Usuario usuario = this.repository.getByEmail(email.Para);
+
+                if (usuario == null)
+                {
+                    TempData["MsgForgotPassword"] = "Para recuperação da senha, acesse o link no e-mail " + email.Para;
+                    return RedirectToAction("ForgotPassword", "Usuarios");
+                }
+                else
+                {
+                    Guid uuid = Guid.NewGuid();
+                    this.repository.updateToken(usuario.Id, uuid.ToString());
+
+                    byte[] tokenBytes = Encoding.ASCII.GetBytes(email.Para + "#" + uuid);
+                    string token =  System.Convert.ToBase64String(tokenBytes);
+
+                    var destinatarios = new List<MailRecipient> { new MailRecipient(usuario.Email) };
+                    var remetente = new MailRecipient("projetoaprenderbrincando@outlook.com.br");
+                    string conteudo = "<p> Olá "+ usuario.Nome+ "! </p><p> Estamos felizes que você faz parte do site Aprender Brincando.Por favor, <a href='https://localhost:7147/Usuarios/ResetPassword?token=" + token + "'>click aqui</a> para confirmar a alteração de senha.</p>";
+                    string assunto = "Aprender Brincando";
+
+                    await this.mailer.SendAsync(conteudo, assunto , destinatarios, remetente, null, null, null);
+
+                    TempData["MsgForgotPassword"] = "Para recuperação da senha, acesse o link no e-mail " + email.Para;
+                    return RedirectToAction("ForgotPassword", "Usuarios");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return View();
+            }
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ResetPassword(Models.Password password)
+        {
+            try
+            {
+                byte[] tokenBytes = System.Convert.FromBase64String(password.Token);
+                string token = System.Text.ASCIIEncoding.ASCII.GetString(tokenBytes);
+                string[] tokens = token.Split("#");
+
+                Models.Usuario usuario = this.repository.getByEmailAndToken(tokens[0], tokens[1]);
+
+
+                if (usuario == null)
+                {
+                    TempData["MsgForgotPassword"] = "Sua recuperação da senha expirou, solicite o reenvio.";
+                    return RedirectToAction("ForgotPassword", "Usuarios");
+                }
+                else
+                {
+                    usuario.Senha = ComputeSha256Hash(password.Senha);
+                    this.repository.update(usuario.Id, usuario);
+
+                    return RedirectToAction("Login", "Usuarios");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return View();
+            }
+        }
+
     }
 }

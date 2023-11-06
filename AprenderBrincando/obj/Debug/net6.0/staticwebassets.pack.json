@@ -1,371 +1,371 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AprenderBrincando.bundle.scp.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AprenderBrincando.bundle.scp.css",
       "PackagePath": "staticwebassets\\AprenderBrincando.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\EducaçãoInfantil.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\EducaçãoInfantil.png",
       "PackagePath": "staticwebassets\\img\\EducaçãoInfantil.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\EducaçãoInfantil1.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\EducaçãoInfantil1.png",
       "PackagePath": "staticwebassets\\img\\EducaçãoInfantil1.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\GST CAM 940-14.jpg",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\GST CAM 940-14.jpg",
       "PackagePath": "staticwebassets\\img\\GST CAM 940-14.jpg"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\alfa.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\alfa.png",
       "PackagePath": "staticwebassets\\img\\alfa.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\alfabetização.jpg",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\alfabetização.jpg",
       "PackagePath": "staticwebassets\\img\\alfabetização.jpg"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\aprenderBrincando.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\aprenderBrincando.png",
       "PackagePath": "staticwebassets\\img\\aprenderBrincando.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bainer2.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bainer2.png",
       "PackagePath": "staticwebassets\\img\\bainer2.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaMenu.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaMenu.png",
       "PackagePath": "staticwebassets\\img\\bordaMenu.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaOndulada.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaOndulada.png",
       "PackagePath": "staticwebassets\\img\\bordaOndulada.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaazul.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaazul.png",
       "PackagePath": "staticwebassets\\img\\bordaazul.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordadegrade.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordadegrade.png",
       "PackagePath": "staticwebassets\\img\\bordadegrade.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaheader.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordaheader.png",
       "PackagePath": "staticwebassets\\img\\bordaheader.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordamenuu.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\bordamenuu.png",
       "PackagePath": "staticwebassets\\img\\bordamenuu.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\ciencia.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\ciencia.png",
       "PackagePath": "staticwebassets\\img\\ciencia.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\cm.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\cm.png",
       "PackagePath": "staticwebassets\\img\\cm.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\coordenaçãoMotora.jpg",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\coordenaçãoMotora.jpg",
       "PackagePath": "staticwebassets\\img\\coordenaçãoMotora.jpg"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoFrase.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoFrase.png",
       "PackagePath": "staticwebassets\\img\\fotoFrase.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural.png",
       "PackagePath": "staticwebassets\\img\\fotoMural.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural1.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural1.png",
       "PackagePath": "staticwebassets\\img\\fotoMural1.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural2.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural2.png",
       "PackagePath": "staticwebassets\\img\\fotoMural2.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural3.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fotoMural3.png",
       "PackagePath": "staticwebassets\\img\\fotoMural3.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fundo1.jpg",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\fundo1.jpg",
       "PackagePath": "staticwebassets\\img\\fundo1.jpg"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\lapis.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\lapis.png",
       "PackagePath": "staticwebassets\\img\\lapis.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logo.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logo1.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logo1.png",
       "PackagePath": "staticwebassets\\img\\logo1.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logoab.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\logoab.png",
       "PackagePath": "staticwebassets\\img\\logoab.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\matematica.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\matematica.png",
       "PackagePath": "staticwebassets\\img\\matematica.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\meninoLivro - Copia.jpg",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\meninoLivro - Copia.jpg",
       "PackagePath": "staticwebassets\\img\\meninoLivro - Copia.jpg"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\meninoLivro1.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\meninoLivro1.png",
       "PackagePath": "staticwebassets\\img\\meninoLivro1.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\nuvemMenu.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\nuvemMenu.png",
       "PackagePath": "staticwebassets\\img\\nuvemMenu.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\quimica.png",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\quimica.png",
       "PackagePath": "staticwebassets\\img\\quimica.png"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\odnan\\Desktop\\SAMANTA\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
