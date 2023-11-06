@@ -1,0 +1,120 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AB</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+
+    <style>
+        .luckiest {
+            font-family: 'Luckiest Guy';
+        }
+    </style>
+</head>
+
+
+<body >
+    <!-- style no body para colorir todo o fundo -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-opacity-10 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="logo" src="~/img/logo.png" width="60" height="75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- ms-auto jogar a imagem para o canto direito -->
+                        <li class="nav-item px-2">
+                            <!-- px-2 espaçamento entre as palavras do menu -->
+                            <a class="nav-link fw-bolder text-dark" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle fw-bolder text-dark" href="#" id="navbarDropdownMenuLink"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Educação Infantil</a></li>
+                                <li><a class="dropdown-item" href="#">Ensino Fundamental</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder text-dark" asp-area="" asp-controller="Home" asp-action="Mural">Mural</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder text-dark" asp-area="" asp-controller="Home" asp-action="SobreNos">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link fw-bolder text-dark" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
+                        </li>
+                        
+                            @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated!) {
+                                <li class="nav-item px-2 dropdown">
+                                    <a class="nav-link dropdown-toggle fw-bolder text-dark" href="#" id="UsuarioMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Olá @HttpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Nome")?.Value!
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="UsuarioMenuLink">
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Mensagens</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                                    </ul>
+                                </li>
+                            } else {
+                                <li class="nav-item px-2">
+                                    <a class="nav-link fw-bolder text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                                </li>
+                            } 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <div class="container-fluid">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+    <footer>
+        <ul class="social-icons">
+            <li><a href="URL_DA_SUA_REDE_SOCIAL"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="URL_DA_SUA_REDE_SOCIAL"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="URL_DA_SUA_REDE_SOCIAL"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

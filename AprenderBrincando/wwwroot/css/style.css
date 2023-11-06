@@ -1,0 +1,33 @@
+.fundoformulario {
+    background-image: url('../img/fundo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.login {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+    .social-icons li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .social-icons a {
+        color: white; /* Cor dos ícones */
+        font-size: 24px;
+        text-decoration: none;
+    }
