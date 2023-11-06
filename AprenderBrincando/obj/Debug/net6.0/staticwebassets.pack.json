@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\img\\meninoLivro1.png"
     },
     {
+      "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\menu.png",
+      "PackagePath": "staticwebassets\\img\\menu.png"
+    },
+    {
       "Id": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\nuvemMenu.png",
       "PackagePath": "staticwebassets\\img\\nuvemMenu.png"
     },

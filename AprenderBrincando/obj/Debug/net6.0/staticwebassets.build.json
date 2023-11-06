@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EBb+JNCF8f/AppMOGsU0XYqsm0ZYO6yErOEYq6KYD5Q=",
+  "Hash": "Z6ufXGVPbIQbckMszyeRutQHDvctb3c+g3KESHM/v1g=",
   "Source": "AprenderBrincando",
   "BasePath": "_content/AprenderBrincando",
   "Mode": "Default",
@@ -576,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\meninoLivro1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\menu.png",
+      "SourceId": "AprenderBrincando",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\",
+      "BasePath": "_content/AprenderBrincando",
+      "RelativePath": "img/menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\menu.png"
     },
     {
       "Identity": "C:\\Users\\Windows 10 Pro X-64\\Desktop\\AB\\AprenderBrincando\\AprenderBrincando\\wwwroot\\img\\nuvemMenu.png",
