@@ -55,7 +55,7 @@
                         
                             @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated!) {
                                 <li class="nav-item px-2 dropdown">
-                                    <a class="nav-link dropdown-toggle fw-bolder text-dark" href="#" id="UsuarioMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle fw-bolder text-white" href="#" id="UsuarioMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Olá @HttpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Nome")?.Value!
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="UsuarioMenuLink">

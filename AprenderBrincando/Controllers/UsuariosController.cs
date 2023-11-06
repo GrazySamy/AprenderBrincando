@@ -23,6 +23,7 @@ using System.Drawing;
 using static System.Net.WebRequestMethods;
 using static Coravel.Mailer.Mail.Mailers.AssertMailer;
 using Org.BouncyCastle.Asn1.Pkcs;
+using AprenderBrincando.Models;
 
 
 namespace AprenderBrincando.Controllers
@@ -31,13 +32,14 @@ namespace AprenderBrincando.Controllers
     {
         private readonly IMailer mailer;
         private readonly Repositories.ADO.SQLServer.Usuario repository;
-        private readonly IUrlHelperFactory _urlHelperFactory;
+        private readonly IConfiguration configuration;
 
         public UsuariosController(IConfiguration configuration, IUrlHelperFactory urlHelperFactory, IMailer mailer) // objeto configuration => parte do framework que permite ler o arquivo appsettings.json - GetConnectionString => método do framework que permite ler a chave ConnectionStrings deste arquivo.
         {
             this.repository = new Repositories.ADO.SQLServer.Usuario(configuration.GetConnectionString(Configurations.Appsettings.getKeyConnectionString()));
+            this.configuration = configuration;
             this.mailer = mailer;
-            _urlHelperFactory = urlHelperFactory;
+            
         }
 
         public ActionResult Create()
@@ -172,13 +174,17 @@ namespace AprenderBrincando.Controllers
                     string token =  System.Convert.ToBase64String(tokenBytes);
 
                     var destinatarios = new List<MailRecipient> { new MailRecipient(usuario.Email) };
-                    var remetente = new MailRecipient("projetoaprenderbrincando@outlook.com.br");
+
+                    string nomeRemetente = configuration.GetValue<string>(Configurations.Appsettings.getKeyNomeRemetente());
+                    string emailRemetente = configuration.GetValue<string>(Configurations.Appsettings.getKeyEmailRemetente());
+                    var remetente = new MailRecipient(emailRemetente, nomeRemetente);
+
+                    string assunto = "Recuperação de Senha";
                     string conteudo = "<p> Olá "+ usuario.Nome+ "! </p><p> Estamos felizes que você faz parte do site Aprender Brincando.Por favor, <a href='https://localhost:7147/Usuarios/ResetPassword?token=" + token + "'>click aqui</a> para confirmar a alteração de senha.</p>";
-                    string assunto = "Aprender Brincando";
 
                     await this.mailer.SendAsync(conteudo, assunto , destinatarios, remetente, null, null, null);
 
-                    TempData["MsgForgotPassword"] = "Para recuperação da senha, acesse o link no e-mail " + email.Para;
+                    TempData["MsgForgotPassword"] = "Para recuperação da senha, siga as orientações enviadas ao e-mail " + email.Para;
                     return RedirectToAction("ForgotPassword", "Usuarios");
                 }
             }
