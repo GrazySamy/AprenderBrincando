@@ -44,6 +44,7 @@ namespace AprenderBrincando.Models
             this.Email = string.Empty;
             this.Celular = string.Empty;
             this.Senha = string.Empty;
+            this.ConfirmarSenha = string.Empty;
         }
     }
 }

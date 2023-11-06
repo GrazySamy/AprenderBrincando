@@ -6,6 +6,7 @@ namespace AprenderBrincando.Models
     {
         [Required(ErrorMessage = "Email obrigatório", AllowEmptyStrings = false)]
         [StringLength(30, MinimumLength = 3, ErrorMessage = "Mínimo de 3 e máximo de 30 caracteres.")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "E-mail em formato inválido.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Senha obrigatório", AllowEmptyStrings = false)]
