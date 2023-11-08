@@ -21,8 +21,7 @@ namespace AprenderBrincando.Controllers
         public IActionResult Categoria()
         {
             return View();
-        }
-        
+        } 
         public IActionResult SobreNos()
         {
             return View();
@@ -40,7 +39,13 @@ namespace AprenderBrincando.Controllers
         {
             return View();
         }
+
         public IActionResult Fundamental()
+        {
+            return View();
+        }
+
+        public IActionResult Mural()
         {
             return View();
         }

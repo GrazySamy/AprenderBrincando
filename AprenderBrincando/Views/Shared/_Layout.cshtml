@@ -44,22 +44,17 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder text-white" asp-area="" asp-controller="Home" asp-action="Mural">Mural</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link fw-bolder text-white" asp-area="" asp-controller="Home" asp-action="SobreNos">Sobre Nós</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link fw-bolder text-white" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
-                        </li>
-                        
+                     
                             @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated!) {
                                 <li class="nav-item px-2 dropdown">
                                 <a class="nav-link dropdown-toggle fw-bolder text-white" href="#" id="UsuarioMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Olá @HttpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Nome")?.Value!
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="UsuarioMenuLink">
-                                        <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Mensagens</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Mural">Mural</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a></li>
                                         <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                                     </ul>
                                 </li>
