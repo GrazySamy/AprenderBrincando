@@ -2,18 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-<section class="BemVindo bg-white">
-    <div class="container" style="margin-top:6%;">
+<section class="bg-white">
+    <div class="container" style="margin-top:2%;">
         <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-                <h1 class="luckiest" style="color: #002147;">Bem Vindo ao</h1>
-                <p class=" display-5 luckiest text-center" style="color: #367cbf;">APRENDER BRINCANDO</p>
-                <a href="" class="btn btn-outline-dark">Saiba Mais</a>
+            <div class="col-md-12" style="transform: translate(0px, 150px);">
+                <h1 id="bv" class="text-md-center display-4 luckiest" style="color: #002147;"> ao <span style="color: #06A5DC;">APRENDER BRINCANDO</span></h1> 
+                <p id="tarefa" class="py-2 text-md-center display-6 luckiest" style="color: #002147;">Porque aprender não é uma tarefa,</p>
+                <p id="aventura" class="text-md-center display-4 luckiest" style="color: #d22927;">É UMA AVENTURA!</p>
             </div>
-            <div class="col-md-6">
-                <img src="~/img/menina_livro.jpg" class="img-fluid"> <!-- img-fluid da espaçamento lateral -->
-                <h3 class="fs-3 me-2 text-center luckiest" style="color: #002147;">Porque aprender não é uma tarefa,</h3>
-                <p class=" display-4 luckiest text-center" style="color: #d22927;">É UMA AVENTURA!</p>
+            <div class="col-md-12">
+                <img id="crianca_mochila" src="~/img/crianças_mochila-.png" class="img-fluid">
             </div>
         </div>
     </div>
@@ -22,25 +20,25 @@
 
 
 
-<section class="educ-infantil p-2 bg-opacity-10" style="background-color:#DCE3F3">
+<section class="bg-opacity-50" style="background-color:#ECF5FF">
    
-    <div class="container p-4">
-        <div class="row">
-            <div class="col-md-12 text-center mt-5">
-                <h1 class="luckiest" style="color: #002147;">Educação Infantil</h1>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 text-center py-5">
+                <h1 class="luckiest display-5" style="color: #002147;">Educação Infantil</h1>
             </div>
         </div>
 
-         <div class="container">
-             <div class="row align-items-center py-5">
+        <div class="container">
+             <div class="row align-items-center">
                 
-                <div class="col-md-4 text-center p-3">
+                <div class="col-md-6 text-center fs-5 fw-bolder p-3">
                     <h1 class="luckiest" style="color: #002147;">ALFABETIZAÇÃO</h1>
                     <p>A alfabetização infantil é fundamental, pois estabelece as bases para leitura, escrita e habilidades cognitivas, fomenta a comunicação e o pensamento crítico, prepara para o sucesso na educação e na vida adulta, promove inclusão social, acesso à informação e autonomia, sendo essencial para o desenvolvimento saudável e educacional das crianças.</p>
                 <a href="saiba-mais.html" class="btn btn-outline-dark">Saiba Mais</a>
                  </div>
-                 <div class="col-md-4 p-3">
-                    <img src="~/img/alfabetização.jpg" class="img-fluid">
+                <div class="col-md-6 p-3">
+                    <img src="~/img/alfabetização.jpg" class="img-fluid alfabetizacao">
                  </div>
              </div>
         </div>
@@ -48,10 +46,10 @@
 
     <div class="container">
         <div class="row align-items-center py-5">
-            <div class="col-md-4 p-3">
-                <img src="~/img/coordenaçãoMotora.jpg" class="img-fluid">
+            <div class="col-md-6 p-3">
+                <img src="~/img/coordenaçãoMotora.jpg" class="img-fluid alfabetizacao">
             </div>
-            <div class="col-md-6 text-center p-3">
+            <div class="col-md-6 text-center fs-5 fw-bolder p-3">
                 <h1 class="luckiest" style="color: #002147;">COORDENAÇÃO MOTORA</h1>
                 <p>A coordenação motora infantil refere-se à habilidade das crianças de controlar seus movimentos. O desenvolvimento da coordenação motora é crucial para atividades diárias, mobilidade e habilidades motoras, influenciando o crescimento e a aprendizagem das crianças.</p>
                 <a href="saiba-mais.html" class="btn btn-outline-dark">Saiba Mais</a>
@@ -61,16 +59,24 @@
 </section>
 
 
-<section class="destaques p-2 bg-white bg-opacity-10">
+<section class="destaques bg-white bg-opacity-10">
     <div class="container p-4">
         <div class="row">
             <div class="col-md-12 text-center mt-5">
-                <h1 class="luckiest" style="color: #002147;">Ensino Fundamental</h1>
+                <h1 class="luckiest display-5" style="color: #002147;">Ensino Fundamental</h1>
             </div>
 
         </div>
 
         <div class="row justify-content-center p-4">
+            <div class="card col-md-4 p-3 m-1" style="width: 21rem;">
+                <img src="~/img/quimica.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title luckiest">PORTUGUÊS</h5>
+                    <p class="card-text">TEXTO</p>
+                    <a href="#" class="btn btn-outline-success">Acessar</a>
+                </div>
+            </div>
 
             <div class="card col-md-4 p-3 m-1" style="width: 21rem;">
                 <img src="~/img/matematica.png" class="card-img-top" alt="...">
@@ -82,32 +88,22 @@
             </div>
 
             <div class="card col-md-4 p-3 m-1" style="width: 21rem;">
-                <img src="~/img/ciencia.png" class="card-img-top" alt="...">
+                <img src="~/img/quimica.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title luckiest">CIÊNCIA</h5>
                     <p class="card-text">TEXTO</p>
                     <a href="#" class="btn btn-outline-success">Acessar</a>
                 </div>
             </div>
-
-            <div class="card col-md-4 p-3 m-1" style="width: 21rem;">
-                <img src="~/img/quimica.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title luckiest">QUÍMICA</h5>
-                    <p class="card-text">TEXTO</p>
-                    <a href="#" class="btn btn-outline-success">Acessar</a>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
-<section class="Mural" style="background-color:#DCE3F3">
+<section class="Mural" style="background-color:#ECF5FF">
     <div class="container">
         <div class="row p-4">
             <div class="col-md-12 mt-4">
-                <h1 class="luckiest text-center" style="color: #002147;">MURAL</h1>
+                <h1 class="luckiest display-5 text-center" style="color: #002147;">MURAL</h1>
             </div>
         </div>
 

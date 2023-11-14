@@ -2,22 +2,69 @@
     font-family: 'Luckiest Guy';
 }
 
+.fundoheader {
+    background-image: url('../img/borda_menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#imgSobreNos {
+    background-image: url('../img/imgSobreNos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:240px;
+    padding-top:130px;
+}
+
+#logo{
+    margin-left:65px;
+}
+
+#b_v {
+   margin-left:500px;
+}
+
 .fundoformulario {
-    background-image: url('../img/fundo1.jpg');
+    background-image: url('../img/espacoLogin.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;
 }
 
+.fundoformulario2 {
+    background-image: url('../img/espacoCadastro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.fundoformulario3 {
+    background-image: url('../img/espacoLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+#fundoformulario4 {
+    background-image: url('../img/espacoCadastro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 135px;
+}
+
 .login {
     margin-bottom: 40px;
     text-align: center;
+  
 }
 
 footer {
-    background-color: #002147;
     padding: 20px 0;
     text-align: center;
+    background-image: url('../img/borda_menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .social-icons {
@@ -36,4 +83,64 @@ footer {
         text-decoration: none;
     }
 
+
+/*
+ Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    #crianca_mochila{
+        margin-top:50px;
+    }
+
+    #bv {
+        font-size: 1.3rem;
+        transform: translate(0, -40px);
+        text-align: center
+    }
+
+    #tarefa {
+        font-size: 1.1rem;
+        transform: translate(0, -40px);
+        text-align: center
+    }
+
+    #aventura {
+        font-size: 1.3rem;
+        transform: translate(0, -40px);
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+
+    #bv {
+        font-size: 1.3rem;
+        transform: translate(0, -40px);
+        text-align: center
+    }
+
+    #tarefa {
+        font-size: 1.1rem;
+        transform: translate(0, -40px);
+        text-align: center
+    }
+
+    #aventura {
+        font-size: 1.3rem;
+        transform: translate(0, -40px);
+        text-align: center;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+}
+
+ /*XX-Large devices (larger desktops, 1400px and up)*/
+@media (max-width: 1400px) {
+}
 
