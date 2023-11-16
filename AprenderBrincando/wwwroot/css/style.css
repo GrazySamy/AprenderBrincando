@@ -14,8 +14,9 @@
     background-image: url('../img/imgSobreNos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom:200px;
-    padding-top:130px;
+    padding-bottom:10px;
+    padding-top:70px;
+    
 }
 
 #logo{
@@ -145,3 +146,14 @@ footer {
 @media (max-width: 1400px) {
 }
 
+
+.custom-tab .nav-item .nav-link.active {
+    background-color: #4083B8;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.custom-tab .nav-item .nav-link {
+    background-color: #ECF5FF;
+    color: #002147;
+}
