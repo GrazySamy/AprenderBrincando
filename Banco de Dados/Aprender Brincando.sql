@@ -14,3 +14,12 @@ CREATE TABLE usuario (
 );
 
 SELECT * FROM USUARIO;
+
+-- VIDEOS
+CREATE TABLE videos (
+	[id] [int] IDENTITY PRIMARY KEY,
+	[link] [varchar](50) NOT NULL,
+	[descricao] [varchar](100) NOT NULL,
+	[categoria] [varchar](30),
+	[subcategoria] [varchar](30)
+);

@@ -30,7 +30,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar
                         )).Value = usuario.Senha;
 
-                    usuario.Id = (int)command.ExecuteScalar(); // o homem do saco leva os dados até o sgbd e volta com o valor do id => ExecuteScalar retorna um único valor. Observe que o CommandText foi alterado com mais uma instrução. Então, as duas instruções são executadas e temos como retorno o valor do id que foi gerado pelo sgbd na tabela carro. Assim, conseguimos atualizar o valor do id do objeto carro que antes da inserção era 0.
+                    usuario.Id = (int)command.ExecuteScalar();
                 }
             }
         }

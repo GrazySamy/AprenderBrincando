@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AprenderBrincando.Models.Video>
+
+@{    
+    ViewData["Title"] = "Catalog";
+}
+
+<h1 style="margin-top: 150px;">Lista de Vídeos</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Criar Novo&nbsp;<span class="fa fa-plus"></span></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Link)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subcategoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th colspan="3" class="text-center">
+                Operações
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Link)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subcategoria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categoria)
+                </td>
+                <td>
+                    <a asp-action="Edit" class="btn btn-warning edit" asp-route-id="@item.Id">Editar&nbsp;<span class="fa fa-pencil-square-o"></span></a>
+                    <a asp-action="Details" class="btn btn-success details" asp-route-id="@item.Id">Detalhes&nbsp;<span class="fa fa-file-text-o"></span></a>
+                    <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir este vídeo?');">Remover&nbsp;<span class="fa fa-trash-o"></span></a>               
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
