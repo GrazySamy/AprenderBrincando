@@ -4,25 +4,27 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Vídeo</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-6">
+            <form asp-action="Edit" class="border p-5 mt-5 bg-white">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <hidden asp-for="Id"></hidden>            
+            <hidden asp-for="Id"></hidden>
+                <div class="row">
+                    <h3>Editar Vídeo</h3>
             <div class="form-group">
                 <label asp-for="Link" class="control-label"></label>
                 <input asp-for="Link" class="form-control" />
                 <span asp-validation-for="Link" class="text-danger"></span>
             </div>
+                </div>
+                    <div class="row">
             <div class="form-group">
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
+                </div>
+                        <div class="row">
             <div class="form-group">
                 <label asp-for="Categoria" class="control-label"></label>
                 <select asp-for="Categoria" class="form-control" id="categoria" onchange="categoria_onchange();">
@@ -30,17 +32,22 @@
                     <option value="2">Ensino Fundamental</option>
                 </select>
             </div>
+                </div>
+                            <div class="row">
             <div class="form-group">
                 <label asp-for="Subcategoria" class="control-label"></label>
                 <select asp-for="Subcategoria" class="form-control" id="subcategoria"></select><br />
             </div>
+                </div>
+                                <div class="row">
             <div class="form-group">
                 <input type="submit" value="Atualizar" class="btn btn-primary" />
                 <input type="button" value="Cancelar" class="btn btn-danger" onclick="window.location.href='@Url.Action("Catalog", "Videos")'" />
             </div>
+                </div>
         </form>
+        </div>
     </div>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
