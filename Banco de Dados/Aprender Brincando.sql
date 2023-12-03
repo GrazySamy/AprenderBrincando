@@ -23,3 +23,14 @@ CREATE TABLE videos (
 	[categoria] [varchar](30),
 	[subcategoria] [varchar](30)
 );
+
+-- IMAGENS - FOTOS
+CREATE TABLE imagens (
+	[id] [int] IDENTITY PRIMARY KEY,
+	[arquivo] [varbinary](MAX) NOT NULL,
+	[content_type] [varchar](30) NOT NULL,
+	[situacao] [char] NOT NULL CHECK (situacao='A' OR situacao='R' OR situacao='E') default 'E', --'A'= Aprovado; 'R'= Reprovado; 'E'= Em análise; 
+	[data_inclusao] [datetime] NOT NULL default GETDATE(),
+	[usuario] [int] NOT NULL FOREIGN KEY REFERENCES usuario (id),
+	[avaliador] [int] FOREIGN KEY REFERENCES usuario (id)
+);

@@ -103,7 +103,8 @@ namespace AprenderBrincando.Controllers
                 {
                     var claims = new List<Claim> {
                         new Claim(ClaimTypes.Name, usuario.Email),
-                        new Claim("Nome", usuario.Nome)   
+                        new Claim("Nome", usuario.Nome),
+                        new Claim("Id", usuario.Id.ToString())
                     };
 
                     var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

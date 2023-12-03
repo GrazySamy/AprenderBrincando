@@ -1,0 +1,87 @@
+﻿@model IEnumerable<AprenderBrincando.Models.Imagem>
+
+@{    
+    ViewData["Title"] = "Catalog";
+}
+
+
+<style>
+    #upload {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="file"] {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<!-- UPLOAD DE FOTOS-->
+
+<div class="lista text-center luckiest">
+    <h1>UPLOAD</h1>
+    <p>
+</div>
+
+<section>
+    <div class="container" id="upload">
+
+        <form asp-action="Upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" id="fileUpload" name="fileUpload" />
+            </div>
+
+            <button type="submit">
+                <i class="fa fa-upload"></i> Enviar
+            </button>
+        </form>
+
+    </div>
+</section>
+
+
+
+<!-- LISTAGEM DE FOTOS-->
+
+<div class="lista text-center luckiest">
+    <h1>Minhas Fotos</h1>
+    <p>  
+</div>
+
+
+<div class="row">
+    @foreach (var item in Model) {
+        <div class="col-2">
+            <img style="width: 200px;" src="@($"data:{item.ContentType};base64,{item.Arquivo}")" />
+            <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir esta foto?');"><span class="fa fa-trash-o"></span></a>
+    </div>
+    }
+</div>
