@@ -8,12 +8,11 @@ CREATE TABLE usuario (
 	[sobrenome] [varchar](15) NULL,
 	[email] [varchar](30) NULL UNIQUE,
 	[celular] [varchar](15) NULL,
+	[perfil] [char] NOT NULL CHECK (perfil='A' OR perfil='E') default 'E', --'A'= Administrador; 'E'= Externo; 
 	[senha] [varchar](65) NULL,
 	[token] [varchar](65) NULL,
 	[dataHoraToken] DATETIME NULL
 );
-
-SELECT * FROM USUARIO;
 
 -- VIDEOS
 CREATE TABLE videos (
@@ -37,8 +36,10 @@ CREATE TABLE imagens (
 );
 
 
-select * from imagens;
+
 drop table imagens;
+drop table usuario;
 
+select * from imagens;
+select * from usuario;
 
-select i.id, i.arquivo, i.content_type, i.situacao, i.data_inclusao, i.data_avaliacao, (u.nome + ' ' + u.sobrenome) as avaliador from imagens as i left join usuario as u on i.avaliador = u.id;

@@ -27,8 +27,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@sobrenome", System.Data.SqlDbType.VarChar)).Value = usuario.Sobrenome;
                     command.Parameters.Add(new SqlParameter("@email", System.Data.SqlDbType.VarChar)).Value = usuario.Email;
                     command.Parameters.Add(new SqlParameter("@celular", System.Data.SqlDbType.VarChar)).Value = usuario.Celular;
-                    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar
-                        )).Value = usuario.Senha;
+                    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = usuario.Senha;
 
                     usuario.Id = (int)command.ExecuteScalar();
                 }
@@ -46,7 +45,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id, nome, sobrenome, email, celular, senha from usuario;";
+                    command.CommandText = "select id, nome, sobrenome, email, celular, perfil, senha from usuario;";
 
                     SqlDataReader dr = command.ExecuteReader();
 
@@ -58,6 +57,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         usuario.Sobrenome = (string)dr["sobrenome"];
                         usuario.Email = (string)dr["email"];
                         usuario.Celular = (string)dr["celular"];
+                        usuario.Perfil = (string)dr["perfil"];
                         usuario.Senha = (string)dr["senha"];
                         usuarios.Add(usuario);
                     }
@@ -95,7 +95,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id, nome, sobrenome, email, celular, senha from usuario where id=@id;";
+                    command.CommandText = "select id, nome, sobrenome, email, celular, perfil, senha from usuario where id=@id;";
                     command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     SqlDataReader dr = command.ExecuteReader();
@@ -107,6 +107,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         usuario.Sobrenome = (string)dr["sobrenome"];
                         usuario.Email = (string)dr["email"];
                         usuario.Celular = (string)dr["celular"];
+                        usuario.Perfil = (string)dr["perfil"];
                         usuario.Senha = (string)dr["senha"];
                     }
                 }
@@ -126,7 +127,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id, nome, sobrenome, email, celular, senha from usuario where email=@email;";
+                    command.CommandText = "select id, nome, sobrenome, email, celular, perfil, senha from usuario where email=@email;";
                     command.Parameters.Add(new SqlParameter("@email", System.Data.SqlDbType.VarChar)).Value = email;
 
                     SqlDataReader dr = command.ExecuteReader();
@@ -139,6 +140,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         usuario.Sobrenome = (string)dr["sobrenome"];
                         usuario.Email = (string)dr["email"];
                         usuario.Celular = (string)dr["celular"];
+                        usuario.Perfil = (string)dr["perfil"];
                         usuario.Senha = (string)dr["senha"];
                     }
                 }
@@ -158,7 +160,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id, nome, sobrenome, email, celular, senha from usuario where email=@email and token=@token and DATEDIFF(SECOND, dataHoraToken, GETDATE()) <= 600;";
+                    command.CommandText = "select id, nome, sobrenome, email, celular, perfil, senha from usuario where email=@email and token=@token and DATEDIFF(SECOND, dataHoraToken, GETDATE()) <= 600;";
                     command.Parameters.Add(new SqlParameter("@email", System.Data.SqlDbType.VarChar)).Value = email;
                     command.Parameters.Add(new SqlParameter("@token", System.Data.SqlDbType.VarChar)).Value = token;
 
@@ -172,6 +174,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         usuario.Sobrenome = (string)dr["sobrenome"];
                         usuario.Email = (string)dr["email"];
                         usuario.Celular = (string)dr["celular"];
+                        usuario.Perfil = (string)dr["perfil"];
                         usuario.Senha = (string)dr["senha"];
                     }
                 }
@@ -189,12 +192,13 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update usuario set nome = @nome, sobrenome = @sobrenome, email = @email, celular = @celular, senha = @senha where id=@id;";
+                    command.CommandText = "update usuario set nome = @nome, sobrenome = @sobrenome, email = @email, celular = @celular, perfil = @perfil, senha = @senha where id=@id;";
 
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = usuario.Nome;
                     command.Parameters.Add(new SqlParameter("@sobrenome", System.Data.SqlDbType.VarChar)).Value = usuario.Sobrenome;
                     command.Parameters.Add(new SqlParameter("@email", System.Data.SqlDbType.VarChar)).Value = usuario.Email;
                     command.Parameters.Add(new SqlParameter("@celular", System.Data.SqlDbType.VarChar)).Value = usuario.Celular;
+                    command.Parameters.Add(new SqlParameter("@perfil", System.Data.SqlDbType.Char)).Value = usuario.Perfil;
                     command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = usuario.Senha;
                     command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 

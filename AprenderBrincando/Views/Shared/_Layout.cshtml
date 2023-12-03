@@ -56,12 +56,18 @@
                                         Olá @HttpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Nome")?.Value!
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="UsuarioMenuLink">
-                                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Mural">Mural</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Imagens" asp-action="Catalog">Minhas Fotos</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Imagens" asp-action="Approval">Aprovar Fotos</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Videos" asp-action="Catalog">Gerenciar Vídeos</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                                    @if (@HttpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Perfil")?.Value == "A"!)
+                                        {
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Imagens" asp-action="Approval">Fotos</a></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Videos" asp-action="Catalog">Vídeos</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Mural">Mural</a></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Imagens" asp-action="Catalog">Minhas Fotos</a></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Contato">Contato</a></li>
+                                        }
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
                                     </ul>
                                 </li>
                             } else {

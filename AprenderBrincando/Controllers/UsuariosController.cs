@@ -103,6 +103,7 @@ namespace AprenderBrincando.Controllers
                 {
                     var claims = new List<Claim> {
                         new Claim(ClaimTypes.Name, usuario.Email),
+                        new Claim("Perfil", usuario.Perfil.ToString()),
                         new Claim("Nome", usuario.Nome),
                         new Claim("Id", usuario.Id.ToString())
                     };

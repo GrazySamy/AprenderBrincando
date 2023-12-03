@@ -21,6 +21,8 @@ namespace AprenderBrincando.Models
         [StringLength(15, MinimumLength = 15, ErrorMessage = "Telefone incompleto.")]
         public string Celular { get; set; }
 
+        public string Perfil { get; set; }
+
         [StringLength(12, MinimumLength = 8, ErrorMessage = "Mínimo de 8 e máximo de 12 caracteres.")]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$", ErrorMessage = "A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula e um número.")]
         [DataType(DataType.Password)]
@@ -41,6 +43,7 @@ namespace AprenderBrincando.Models
             this.Sobrenome = string.Empty;
             this.Email = string.Empty;
             this.Celular = string.Empty;
+            this.Perfil = string.Empty;
             this.Senha = string.Empty;
             this.ConfirmarSenha = string.Empty;
         }
