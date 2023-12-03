@@ -1,0 +1,80 @@
+﻿@model IEnumerable<AprenderBrincando.Models.Imagem>
+
+@{    
+    ViewData["Title"] = "Approval";
+}
+
+
+<div class="lista text-center luckiest">
+    <h1>Aprovação de Fotos</h1>
+    <p>  
+</div>
+<div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInclusao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Situacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAvaliacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaliador)
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagemModal-@item.Id">
+                        <i class="fa fa-eye"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="imagemModal-@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="@($"data:{item.ContentType};base64,{item.Arquivo}")" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                 </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.DataInclusao)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Situacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataAvaliacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Avaliador)
+                </td>
+                <td>
+                    <a asp-action="Aprovar" class="btn btn-success details" asp-route-id="@item.Id" onclick="return confirm('Deseja aprovar esta imagem?');">Aprovar&nbsp;<span class="fa fa-thumbs-up"></span></a>
+                    <a asp-action="Reprovar" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja reprovar esta imagem?');">Reprovar&nbsp;<span class="fa fa-thumbs-down"></span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    </div>
+
+

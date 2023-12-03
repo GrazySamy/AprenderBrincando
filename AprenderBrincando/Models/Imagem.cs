@@ -18,6 +18,9 @@ namespace AprenderBrincando.Models
         [Display(Name = "Data de Inclusão")]
         public DateTime DataInclusao { get; set; }
 
+        [Display(Name = "Data de Avaliação")]
+        public Nullable<DateTime> DataAvaliacao { get; set; }
+
         [Display(Name = "Usuário")]
         public string Usuario { get; set; }
 

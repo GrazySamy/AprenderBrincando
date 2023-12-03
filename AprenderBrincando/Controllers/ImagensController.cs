@@ -22,7 +22,13 @@ namespace AprenderBrincando.Controllers
         public IActionResult Catalog()
         {
             List <Imagem> imagens = this.repository.getAllByUser(Int32.Parse(User.FindFirstValue("Id")));
+            return View(imagens);
+        }
 
+        [HttpGet]
+        public IActionResult Approval()
+        {
+            List<Imagem> imagens = this.repository.getAll();
             return View(imagens);
         }
 
@@ -58,6 +64,20 @@ namespace AprenderBrincando.Controllers
         {
             this.repository.delete(id);
             return RedirectToAction("Catalog");
+        }
+
+        [HttpGet]
+        public IActionResult Aprovar(int id)
+        {
+            this.repository.update(id, 'A', Int32.Parse(User.FindFirstValue("Id")));
+            return RedirectToAction("Approval");
+        }
+
+        [HttpGet]
+        public IActionResult Reprovar(int id)
+        {
+            this.repository.update(id, 'R', Int32.Parse(User.FindFirstValue("Id")));
+            return RedirectToAction("Approval");
         }
     }
 }

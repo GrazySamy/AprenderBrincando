@@ -13,10 +13,11 @@
     
 
 #imgSobreNos {
-    background-image: url('../img/imgSobreNos.jpg');
+    background-image: url('../img/SobreNos11.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top:90px;
+    padding-bottom:400px;
+    padding-top:200px;
     
 }
 

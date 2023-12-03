@@ -31,6 +31,14 @@ CREATE TABLE imagens (
 	[content_type] [varchar](30) NOT NULL,
 	[situacao] [char] NOT NULL CHECK (situacao='A' OR situacao='R' OR situacao='E') default 'E', --'A'= Aprovado; 'R'= Reprovado; 'E'= Em análise; 
 	[data_inclusao] [datetime] NOT NULL default GETDATE(),
+	[data_avaliacao] [datetime],
 	[usuario] [int] NOT NULL FOREIGN KEY REFERENCES usuario (id),
 	[avaliador] [int] FOREIGN KEY REFERENCES usuario (id)
 );
+
+
+select * from imagens;
+drop table imagens;
+
+
+select i.id, i.arquivo, i.content_type, i.situacao, i.data_inclusao, i.data_avaliacao, (u.nome + ' ' + u.sobrenome) as avaliador from imagens as i left join usuario as u on i.avaliador = u.id;

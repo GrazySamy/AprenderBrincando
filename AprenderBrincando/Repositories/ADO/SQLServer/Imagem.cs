@@ -44,7 +44,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id, arquivo, content_type, situacao, data_inclusao, usuario, avaliador from imagens;";
+                    command.CommandText = "select i.id, i.arquivo, i.content_type, i.situacao, i.data_inclusao, i.data_avaliacao, (u.nome + ' ' + u.sobrenome) as avaliador from imagens as i left join usuario as u on i.avaliador = u.id;";
 
                     SqlDataReader dr = command.ExecuteReader();
 
@@ -54,10 +54,10 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         imagem.Id = (int)dr["id"];
                         imagem.Arquivo = Convert.ToBase64String((byte[])dr["arquivo"]);
                         imagem.ContentType = (string)dr["content_type"];
-                        imagem.Situacao = (string)dr["situacao"];
+                        imagem.Situacao = ((string)dr["situacao"] == "A") ? "Aprovado" : ((string)dr["situacao"] == "R") ? "Reprovado" : "Em análise";
                         imagem.DataInclusao = (DateTime)dr["data_inclusao"];
-                        imagem.Usuario = (string)dr["usuario"];
-                        imagem.Avaliador = (string)dr["avaliador"];
+                        imagem.DataAvaliacao = (dr["data_avaliacao"] == DBNull.Value) ? null : (DateTime)dr["data_avaliacao"];
+                        imagem.Avaliador = (dr["avaliador"] == DBNull.Value) ? "" : (string)dr["avaliador"];
 
                         imagens.Add(imagem);
                     }
@@ -150,7 +150,7 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
             return imagem;
         }
 
-        public void update(int id, Models.Imagem imagem)
+        public void update(int id, char situacao, int avaliador)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -159,11 +159,11 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update imagens set situacao = @situacao, avaliador = @avaliador where id=@id;";
+                    command.CommandText = "update imagens set situacao = @situacao, avaliador = @avaliador, data_avaliacao=GETDATE() where id=@id;";
 
                     command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
-                    command.Parameters.Add(new SqlParameter("@situacao", System.Data.SqlDbType.VarChar)).Value = imagem.Situacao;
-                    command.Parameters.Add(new SqlParameter("@avaliador", System.Data.SqlDbType.VarChar)).Value = imagem.Avaliador;
+                    command.Parameters.Add(new SqlParameter("@situacao", System.Data.SqlDbType.Char)).Value = situacao;
+                    command.Parameters.Add(new SqlParameter("@avaliador", System.Data.SqlDbType.Int)).Value = avaliador;
 
                     command.ExecuteNonQuery();
                 }
