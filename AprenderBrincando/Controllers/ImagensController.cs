@@ -32,6 +32,12 @@ namespace AprenderBrincando.Controllers
             return View(imagens);
         }
 
+        public IActionResult Mural()
+        {
+            List<Imagem> imagens = this.repository.getAllByStatus('A');
+            return View(imagens);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Upload(IFormFile fileUpload)

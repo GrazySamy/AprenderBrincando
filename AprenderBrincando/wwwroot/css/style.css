@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Colored Crayons';
+    src: url('ColoredCrayons-7wPR.ttf');
+}
+
+#giz {
+    font-family: 'Colored Crayons';
+}
+
 .luckiest {
     font-family: 'Luckiest Guy';
     color: #002147;

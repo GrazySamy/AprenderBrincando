@@ -57,6 +57,8 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         video.Subcategoria = (string)dr["subcategoria"];
                         video.Categoria = (string)dr["categoria"];
 
+                        TransformarCategoria(video);
+
                         videos.Add(video);
                     }
                 }
@@ -105,6 +107,8 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                         video.Descricao = (string)dr["descricao"];
                         video.Subcategoria = (string)dr["subcategoria"];
                         video.Categoria = (string)dr["categoria"];
+
+                        TransformarCategoria(video);
                     }
                 }
             }
@@ -130,6 +134,43 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@subcategoria", System.Data.SqlDbType.VarChar)).Value = video.Subcategoria;
 
                     command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void TransformarCategoria(Models.Video video)
+        {
+            if (video.Categoria == "1")
+            {
+                video.Categoria = "Educação Infantil";
+
+                switch (video.Subcategoria)
+                {
+                    case "1":
+                        video.Subcategoria = "Alfabetização";
+                        break;
+                    case "2":
+                        video.Subcategoria = "Coordenação Motora";
+                        break;
+
+                }
+            }
+            else if (video.Categoria == "2")
+            {
+
+                video.Categoria = "Ensino Fundamental";
+
+                switch (video.Subcategoria)
+                {
+                    case "1":
+                        video.Subcategoria = "Português";
+                        break;
+                    case "2":
+                        video.Subcategoria = "Matemática";
+                        break;
+                    case "3":
+                        video.Subcategoria = "Ciências";
+                        break;
                 }
             }
         }

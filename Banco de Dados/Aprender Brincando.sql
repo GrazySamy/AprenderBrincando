@@ -2,6 +2,7 @@ CREATE DATABASE db_educacao;
 
 USE db_educacao;
 
+-- USUARIOS
 CREATE TABLE usuario (
 	[id] [int] IDENTITY(1,1) PRIMARY KEY,
 	[nome] [varchar](15) NULL,
@@ -35,11 +36,6 @@ CREATE TABLE imagens (
 	[avaliador] [int] FOREIGN KEY REFERENCES usuario (id)
 );
 
-
-
-drop table imagens;
-drop table usuario;
-
-select * from imagens;
+-- ALTERACAO DE PERFIL DO USUARIO
 select * from usuario;
-
+update usuario set perfil = 'A' where id = 1;

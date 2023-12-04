@@ -45,11 +45,6 @@ namespace AprenderBrincando.Controllers
             return View();
         }
 
-        public IActionResult Mural()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

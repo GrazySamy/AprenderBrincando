@@ -66,7 +66,40 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
 
             return imagens;
         }
+        public List<Models.Imagem> getAllByStatus(char situacao)
+        {
+            List<Models.Imagem> imagens = new List<Models.Imagem>();
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "select i.id, i.arquivo, i.content_type, i.situacao, i.data_inclusao, i.data_avaliacao, (u.nome + ' ' + u.sobrenome) as avaliador from imagens as i left join usuario as u on i.avaliador = u.id where i.situacao = @situacao;";
+                    command.Parameters.Add(new SqlParameter("@situacao", System.Data.SqlDbType.Char)).Value = situacao;
+
+                    SqlDataReader dr = command.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        Models.Imagem imagem = new Models.Imagem();
+                        imagem.Id = (int)dr["id"];
+                        imagem.Arquivo = Convert.ToBase64String((byte[])dr["arquivo"]);
+                        imagem.ContentType = (string)dr["content_type"];
+                        imagem.Situacao = ((string)dr["situacao"] == "A") ? "Aprovado" : ((string)dr["situacao"] == "R") ? "Reprovado" : "Em análise";
+                        imagem.DataInclusao = (DateTime)dr["data_inclusao"];
+                        imagem.DataAvaliacao = (dr["data_avaliacao"] == DBNull.Value) ? null : (DateTime)dr["data_avaliacao"];
+                        imagem.Avaliador = (dr["avaliador"] == DBNull.Value) ? "" : (string)dr["avaliador"];
+
+                        imagens.Add(imagem);
+                    }
+                }
+            }
+
+            return imagens;
+        }
 
         public List<Models.Imagem> getAllByUser(int usuario)
         {

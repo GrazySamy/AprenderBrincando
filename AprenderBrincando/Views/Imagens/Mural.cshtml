@@ -1,0 +1,21 @@
+﻿@model IEnumerable<AprenderBrincando.Models.Imagem>
+
+@{
+    ViewData["Title"] = "Mural Page";
+}
+
+<!-- LISTAGEM DE FOTOS-->
+
+<div class="lista text-center luckiest">
+    <h1>Mural</h1>
+</div>
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-2">
+            <img style="width: 200px;" src="@($"data:{item.ContentType};base64,{item.Arquivo}")" />
+        </div>
+    }
+</div>
