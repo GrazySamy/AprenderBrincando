@@ -67,6 +67,39 @@ namespace AprenderBrincando.Repositories.ADO.SQLServer
             return videos;
         }
 
+        public List<Models.Video> getAllByCategory(string categoria)
+        {
+            List<Models.Video> videos = new List<Models.Video>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "select id, link, descricao, subcategoria, categoria from videos where categoria = @categoria;";
+                    command.Parameters.Add(new SqlParameter("@categoria", System.Data.SqlDbType.VarChar)).Value = categoria;
+
+                    SqlDataReader dr = command.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        Models.Video video = new Models.Video();
+                        video.Id = (int)dr["id"];
+                        video.Link = (string)dr["link"];
+                        video.Descricao = (string)dr["descricao"];
+                        video.Subcategoria = (string)dr["subcategoria"];
+                        video.Categoria = (string)dr["categoria"];
+
+                        videos.Add(video);
+                    }
+                }
+            }
+
+            return videos;
+        }
+
         public void delete(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))

@@ -35,16 +35,6 @@ namespace AprenderBrincando.Controllers
             return View();
         }
 
-        public IActionResult Infantil()
-        {
-            return View();
-        }
-
-        public IActionResult Fundamental()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

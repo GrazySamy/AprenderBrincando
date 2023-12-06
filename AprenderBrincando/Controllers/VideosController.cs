@@ -29,6 +29,16 @@ namespace AprenderBrincando.Controllers
             return View();
         }
 
+        public IActionResult Infantil()
+        {
+            return View(repository.getAllByCategory("1"));
+        }
+
+        public IActionResult Fundamental()
+        {
+            return View(repository.getAllByCategory("2"));
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Models.Video video)
