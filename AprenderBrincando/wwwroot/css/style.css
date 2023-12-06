@@ -3,14 +3,35 @@
     src: url('ColoredCrayons-7wPR.ttf');
 }
 
+@font-face {
+    font-family: 'Colar Link';
+    src: url('pastel.ttf');
+}
+
+@font-face {
+    font-family: 'RISCO';
+    src: url('scratcher.ttf');
+}
+
+
+@font-face {
+    font-family: 'RubikDirt';
+    src: url('RubikDirt.ttf');
+}
+
 #giz {
-    font-family: 'Colored Crayons';
+    font-family: 'Colar Link';
 }
 
 .luckiest {
     font-family: 'Luckiest Guy';
     color: #002147;
 }
+
+
+
+
+
 
 .fundoheader {
     background-image: url('../img/bord3.png');
@@ -19,19 +40,22 @@
     height:130px;
    
 }
-    
+
 
 #imgSobreNos {
-    background-image: url('../img/SobreNos11.png');
+    background-image: url('../img/sobreNos.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom:400px;
-    padding-top:200px;
-    
+    margin-top: 150px;
+    padding-bottom:650px;
 }
 
-#logo{
-    margin-left:5px;
+#text_sobreNos{
+    text-align:center;
+}
+
+#logo {
+    margin-left: 5px;
     margin-top: 130px;
 }
 
@@ -41,42 +65,38 @@
 }
 
 #crianca_mochila {
-    margin-top: 200px;
-    margin-left: 110px;
+
+   
+}
+
+#bv {
   
 }
 
-#b_v {
-    margin-left: 500px;
-}
-
-.fundoformulario {
-    background-image: url('../img/espacoLogin.png');
+.fundologin {
+    background-image: url('../img/fundo_login.png');
     background-repeat: no-repeat;
     background-size: cover;
-  
-
+   
 }
 
-.fundoformulario2 {
-    background-image: url('../img/espacoCadastro.png');
+.fundocadastro {
+    background-image: url('../img/fundo_cadastro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundoemail {
+    background-image: url('../img/fundo_recuperar_senha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo_recuperarsenha {
+    background-image: url('../img/fundo_recuperar_senha.png');
     background-repeat: no-repeat;
     background-size: cover;
     
-}
-
-.fundoformulario3 {
-    background-image: url('../img/espacoLogin.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-#fundoformulario4 {
-    background-image: url('../img/espacoCadastro.png');
-    background-repeat: no-repeat;
-    background-size: cover;   
-    padding-top:150px;
 }
 
 .contato {
