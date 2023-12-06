@@ -47,7 +47,7 @@
 <!-- UPLOAD DE FOTOS-->
 
 <div class="lista text-center luckiest">
-    <h1>UPLOAD</h1>
+    <h1 class="luckiest">UPLOAD</h1>
     <p>
 </div>
 
@@ -71,17 +71,33 @@
 
 <!-- LISTAGEM DE FOTOS-->
 
-<div class="lista text-center luckiest">
-    <h1>Minhas Fotos</h1>
+<div class="text-center py-5">
+    <h1 class="luckiest">Minhas Fotos</h1>
     <p>  
 </div>
 
 
-<div class="row">
-    @foreach (var item in Model) {
-        <div class="col-2">
-            <img style="width: 200px;" src="@($"data:{item.ContentType};base64,{item.Arquivo}")" />
+<head>
+    <link rel="stylesheet" href="~/css/galery.css" />
+    <link rel="stylesheet" href="~/lib/lightbox/css/jquery.lbt-lightbox.min.css" />
+</head>
+
+
+<div id="gallery">
+
+    @foreach (var item in Model)
+    {
+        <div class="box">
+            <img src="@($"data:{item.ContentType};base64,{item.Arquivo}")" />
             <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.Id" onclick="return confirm('Deseja excluir esta foto?');"><span class="fa fa-trash-o"></span></a>
-    </div>
+        </div>
     }
+
 </div>
+
+<div style="height: 800px;"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="~/lib/lightbox/js/jquery.lbt-lightbox.js"></script>
+
+

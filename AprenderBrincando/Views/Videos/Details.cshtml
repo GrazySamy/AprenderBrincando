@@ -4,11 +4,17 @@
     ViewData["Title"] = "Detalhes do Vídeo";
 }
 
-<h1>Detalhes do Vídeo</h1>
+<div class="fundoformulario2">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
 
-<div>    
-    <hr />
-    <dl class="row">
+
+
+        <div>
+        <dl class="row">
+            <h1>Detalhes do Vídeo</h1>
+        </dl>
+        <dl class="row">
+               
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
@@ -40,7 +46,9 @@
             @Html.DisplayFor(model => model.Categoria)
         </dd>
     </dl>
+            <dl class="row">
+                <input style="width: 80px;" type="button" value="Voltar" class="btn btn-primary" onclick="window.location.href='@Url.Action("Catalog", "Videos")'" />
+            </dl>
 </div>
-<div>
-    <input type="button" value="Voltar" class="btn btn-primary" onclick="window.location.href='@Url.Action("Catalog", "Videos")'" />
+    </div>
 </div>
