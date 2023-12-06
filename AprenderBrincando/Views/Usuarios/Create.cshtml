@@ -4,11 +4,11 @@
     ViewData["Title"] = "Create Page"; //cadastro
 }
 
-<div class="fundoformulario2">
+<div class="fundocadastro">
     <div class="container1 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="col-md-4">
             
-            <form asp-action="Create" class="border p-3 mt-5">
+            <form asp-action="Create" class="border p-3 mt-5 fs-5">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row">
                     <h1 class="card-title luckiest text-center"> Cadastro</h1>
@@ -55,8 +55,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group mt-3">
-                        <input type="submit" value="Enviar" class="btn btn-primary" />
-                        <input type="button" value="Cancelar" class="btn btn-danger" onclick="window.location.href='@Url.Action("Index", "Home")'" />
+                        <input type="submit" value="Enviar" class="btn btn-primary fs-5" />
+                        <input type="button" value="Cancelar" class="btn btn-danger fs-5" onclick="window.location.href='@Url.Action("Index", "Home")'" />
                     </div>
                 </div>
             </form>
